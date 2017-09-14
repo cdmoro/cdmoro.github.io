@@ -21835,13 +21835,16 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
       apiURL: 'https://jsonplaceholder.typicode.com/posts',
       posts: null,
-      carga: false,
       colores: ["4CAF50", "FFEB3B", "795548", "607D8B", "673AB7"]
     };
   },
@@ -21856,8 +21859,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
       xhr.open('GET', self.apiURL);
       xhr.onload = function () {
-        self.carga = true;
-        self.posts = JSON.parse(xhr.response);
+        self.posts = JSON.parse(xhr.response).slice(0, 2);
       };
       xhr.send();
       /*this.$http.get(this.apiURL).then((respuesta) => {
@@ -21880,11 +21882,23 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "container"
   }, [_c('div', {
     staticClass: "row justify-content-md-center post-wrapper"
-  }, [(_vm.carga) ? _c('div', {
-    staticClass: "col-md-6 col-xs-12"
+  }, [_c('div', {
+    staticClass: "col-md-8 col-xs-12"
   }, [_c('h4', {
     staticClass: "mb-5"
-  }, [_vm._v("Enterate de las últimas novedades de nuestro blog")]), _vm._v(" "), _vm._l((5), function(i) {
+  }, [_vm._v("Enterate de las últimas novedades de nuestro blog")]), _vm._v(" "), _c('div', {
+    directives: [{
+      name: "show",
+      rawName: "v-show",
+      value: (_vm.posts == null),
+      expression: "posts == null"
+    }],
+    staticClass: "alert alert-secondary text-center p-5"
+  }, [_c('i', {
+    staticClass: "fa fa-spinner fa-pulse fa-2x fa-fw"
+  }), _vm._v(" "), _c('div', {
+    staticClass: "text-muted small mt-2"
+  }, [_vm._v("Cargando las novedades...")])]), _vm._v(" "), _vm._l((_vm.posts), function(value, i) {
     return [_c('div', {
       key: i,
       staticClass: "post"
@@ -21892,14 +21906,14 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
       staticClass: "post-date text-muted"
     }, [_vm._v("01/08/2017")]), _vm._v(" "), _c('h2', {
       staticClass: "post-title"
-    }, [_vm._v(_vm._s(_vm.posts[i].title))]), _vm._v(" "), _c('div', [_c('img', {
+    }, [_vm._v(_vm._s(value.title))]), _vm._v(" "), _c('div', [_c('img', {
       staticClass: "w-100",
       attrs: {
-        "src": 'http://via.placeholder.com/500x350/' + _vm.colores[i] + '/333333?text=Imagen+post'
+        "src": 'http://via.placeholder.com/500x350/' + _vm.colores[0] + '/333333?text=Imagen+post'
       }
     })]), _vm._v(" "), _c('div', {
       staticClass: "text-muted mt-3 mb-3"
-    }, [_vm._v(_vm._s(_vm.posts[i].body))]), _vm._v(" "), _c('div', {
+    }, [_vm._v(_vm._s(value.body))]), _vm._v(" "), _c('div', {
       staticClass: "entry-meta"
     }, [_c('a', {
       staticClass: "author-wrap",
@@ -21909,15 +21923,15 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }, [_c('img', {
       staticClass: "avatar",
       attrs: {
-        "src": 'http://via.placeholder.com/50x50/' + _vm.colores.reverse()[i] + '/333333?text=A'
+        "src": 'http://via.placeholder.com/50x50/' + _vm.colores[0] + '/333333?text=A'
       }
-    }), _vm._v(" por Nombre autor ")]), _vm._v(" "), _c('a', {
+    }), _vm._v(" por Camilo Canegato ")]), _vm._v(" "), _c('a', {
       staticClass: "btn btn-info float-right mt-1",
       attrs: {
         "href": "#"
       }
     }, [_vm._v("Leer nota completa »")])])])]
-  })], 2) : _vm._e()])])])
+  })], 2)])])])
 },staticRenderFns: []}
 
 /***/ }),
