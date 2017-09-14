@@ -21928,7 +21928,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }, [_c('img', {
       staticClass: "avatar",
       attrs: {
-        "src": 'http://via.placeholder.com/50x50/' + _vm.colores[Math.floor((Math.random() * 5))] + '/333333?text=A'
+        "src": 'https://via.placeholder.com/50x50/' + _vm.colores[Math.floor((Math.random() * 5))] + '/333333?text=A'
       }
     }), _vm._v(" por Camilo Canegato ")]), _vm._v(" "), _c('a', {
       staticClass: "btn btn-info float-right mt-1",
