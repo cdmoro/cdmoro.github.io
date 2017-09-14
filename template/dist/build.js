@@ -21395,7 +21395,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }
   }, [_c('source', {
     attrs: {
-      "src": "../src/assets/manifestacion.mp4",
+      "src": "css/assets/manifestacion.mp4",
       "type": "video/mp4"
     }
   }), _vm._v("\n                        Tu explorador no soporta videos\n                    ")])]), _vm._v(" "), _c('div', {
