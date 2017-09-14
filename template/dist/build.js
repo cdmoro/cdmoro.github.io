@@ -21841,6 +21841,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     return {
       apiURL: 'https://jsonplaceholder.typicode.com/posts',
       posts: null,
+      carga: false,
       colores: ["4CAF50", "FFEB3B", "795548", "607D8B", "673AB7"]
     };
   },
@@ -21855,6 +21856,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
       xhr.open('GET', self.apiURL);
       xhr.onload = function () {
+        self.carga = true;
         self.posts = JSON.parse(xhr.response);
       };
       xhr.send();
@@ -21878,7 +21880,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     staticClass: "container"
   }, [_c('div', {
     staticClass: "row justify-content-md-center post-wrapper"
-  }, [_c('div', {
+  }, [(_vm.carga) ? _c('div', {
     staticClass: "col-md-6 col-xs-12"
   }, [_c('h4', {
     staticClass: "mb-5"
@@ -21915,7 +21917,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
         "href": "#"
       }
     }, [_vm._v("Leer nota completa »")])])])]
-  })], 2)])])])
+  })], 2) : _vm._e()])])])
 },staticRenderFns: []}
 
 /***/ }),
