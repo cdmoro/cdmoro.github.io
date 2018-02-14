@@ -1,5 +1,5 @@
 {
-    "title": "Agrupación",
+    "title": "Hacemos.AEFIP",
     "menu": [
         {
             "nombre": "Inicio",
@@ -9,11 +9,26 @@
         {
             "nombre": "Nosotros",
             "to": "nosotros",
-            "visible": true
+            "visible": false
         },
         {
             "nombre": "Gremiales",
             "to": "gremiales",
+            "visible": true
+        },
+        {
+            "nombre": "Estudios fiscales",
+            "to": "estudios-fiscales",
+            "visible": true
+        },
+        {
+            "nombre": "Transparencia",
+            "to": "transparencia",
+            "visible": true
+        },
+        {
+            "nombre": "Prensa y/o comunicación",
+            "to": "prensa",
             "visible": true
         },
         {
@@ -28,61 +43,9 @@
             "visible": true
         }
     ],
-    "main": [
-        {
-            "nombre": "Organigrama y referentes",
-            "to": "sociales",
-            "visible": true
-        },
-        {
-            "nombre": "Transparencia",
-            "to": "sociales",
-            "visible": true
-        },
-        {
-            "nombre": "Plaza seca",
-            "to": "sociales",
-            "visible": true
-        },
-        {
-            "nombre": "Noticias",
-            "to": "sociales",
-            "visible": true
-        },
-        {
-            "nombre": "Programa",
-            "to": "sociales",
-            "visible": true
-        },
-        {
-            "nombre": "Sindicato",
-            "to": "sociales",
-            "visible": true
-        },
-        {
-            "nombre": "Comunidad",
-            "to": "sociales",
-            "visible": true
-        },
-        {
-            "nombre": "Espacio de mujer",
-            "to": "sociales",
-            "visible": true
-        },
-        {
-            "nombre": "Turismo",
-            "to": "sociales",
-            "visible": true
-        },
-        {
-            "nombre": "Crowfunding",
-            "to": "sociales",
-            "visible": true
-        }
-    ],
     "social": [
         {
-            "nombre": "agrupacion_ok",
+            "nombre": "hacemos.aefip",
             "font": "facebook-official",
             "url": "www.facebook.com",
             "color": "#3954A1",
@@ -90,7 +53,7 @@
             "visible": true
         },
         {
-            "nombre": "agrupacion",
+            "nombre": "hacemos.aefip",
             "font": "twitter",
             "url": "www.twitter.com",
             "color": "#56D7FE",
@@ -98,14 +61,14 @@
             "visible": true
         },
         {
-            "nombre": "agrupacionOk",
+            "nombre": "hacemos.aefip",
             "font": "instagram",
             "url": "www.instagram.com",
             "color": "#C0328D",
             "visible": true
         },
         {
-            "nombre": "agrupacionOk",
+            "nombre": "hacemos.aefip",
             "font": "youtube-play",
             "url": "www.youtube.com",
             "color": "#FF0000",
@@ -113,7 +76,7 @@
             "visible": true
         },
         {
-            "nombre": "agrupacion6",
+            "nombre": "hacemos.aefip",
             "font": "wordpress",
             "url": "www.wordpress.com",
             "color": "#1D8BBE",
